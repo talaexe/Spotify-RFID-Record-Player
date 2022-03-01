@@ -11,31 +11,8 @@ In this project, the RFID scanner module is mounted inside the wooden box, and t
 I wrote a very detailed blog post with all the steps you need here:
 https://talaexe.com/moderndayrecordplayer
 
-You can also watch the YouTube video if you prefer.
-
-[![Record Player Image](https://img.youtube.com/vi/-jGWjFR936o/0.jpg)](https://www.youtube.com/watch?v=-jGWjFR936o)
-
-
-### Blog Table of Contents
-> 📌 Bill of Materials
->
-> 📌 RFID Scanning
-> - Wiring the RFID Scanner to the Rapsberry Pi
-> - Setting up the Raspberry Pi
-> - Using Python to Read RFID Sticker Values
->
-> 📌 Spotify Integration
-> - Making the Raspberry Pi a Spotify Connect Device
-> - Spotify API Setup
-> - Using Python to Control Spotify
->
-> 📌 Combining the Spotify API and RFID Reader
-> - Code to control Spotify API using RFID Values
-> - Executing the Script on Startup of the Raspberry Pi
->
-> 📌 Finishing Touches
-
-
+You can also watch the YouTube video here if you prefer.
+https://www.youtube.com/watch?v=-jGWjFR936o
 
 ## Bill of Materials
 
@@ -58,3 +35,23 @@ I get a small commission if you use the links below to purchase the items for th
     <a href="https://amzn.to/3IuTQSq" target="__blank">🇨🇦 Canada</a>
 - Speakers
 
+
+### Blog Table of Contents
+https://talaexe.com/moderndayrecordplayer
+> 📌 Bill of Materials
+>
+> 📌 RFID Scanning
+> - Wiring the RFID Scanner to the Rapsberry Pi
+> - Setting up the Raspberry Pi
+> - Using Python to Read RFID Sticker Values
+>
+> 📌 Spotify Integration
+> - Making the Raspberry Pi a Spotify Connect Device
+> - Spotify API Setup
+> - Using Python to Control Spotify
+>
+> 📌 Combining the Spotify API and RFID Reader
+> - Code to control Spotify API using RFID Values
+> - Executing the Script on Startup of the Raspberry Pi
+>
+> 📌 Finishing Touches
