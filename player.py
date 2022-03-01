@@ -19,6 +19,7 @@ while True:
         
         # create an infinite while loop that will always be waiting for a new scan
         while True:
+            print("Waiting for record scan...")
             id= reader.read()[0]
             print("Card Value is:",id)
             sp.transfer_playback(device_id=DEVICE_ID, force_play=False)
