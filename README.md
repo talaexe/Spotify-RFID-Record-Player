@@ -1,6 +1,6 @@
 ## Modern Day Record Player
 
-![Record Player](./recordplayerimage.png)
+<img src="./recordplayerimage.png" width="400">
 
 This modern day record player lets you wave an album cover ontop of the wooden box, and automatically starts playing the album!!
 
