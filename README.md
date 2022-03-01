@@ -1,6 +1,5 @@
-## Modern Day Record Player
-
 <p align="center"><img src="./recordplayerimage.png" width="800"></p>
+## Modern Day Record Player
 
 This modern day record player lets you wave an album cover ontop of the wooden box, and automatically starts playing the album!!
 
