@@ -6,29 +6,32 @@ The record player uses Radio-frequency identification (RFID), the same technolog
 
 In this project, the RFID scanner module is mounted inside the wooden box, and the vinyls all have an RFID sticker that can be tapped on the box to switch the album. Inside the box, the RFID scanner is wired to a Raspberry Pi, which is running a python program that switches the song based on the value it reads from the RFID scanner. Depending on the RFID sticker value, the corresponding album is played through the Spotify API.  
 
-In this blog post, I'll be teaching you everything you need to make this record player. You can also watch the YouTube video if you prefer.
+I wrote a very detailed blog post with all the steps you need here:
+https://talaexe.com/moderndayrecordplayer
+
+You can also watch the YouTube video if you prefer.
 
 [![Record Player Image](https://img.youtube.com/vi/-jGWjFR936o/0.jpg)](https://www.youtube.com/watch?v=-jGWjFR936o)
 
 
-### Table of Contents
-> 📌 [Bill of Materials](#materials)<br>
+### Blog Table of Contents
+> 📌 Bill of Materials
 >
-> 📌 [RFID Scanning](#rfidscanning)<br>
-> - [Wiring the RFID Scanner to the Rapsberry Pi](#wiring)<br>
-> - [Setting up the Raspberry Pi](#rpisetup)<br>
-> - [Using Python to Read RFID Sticker Values](#rfidpython)<br>
+> 📌 RFID Scanning
+> - Wiring the RFID Scanner to the Rapsberry Pi
+> - Setting up the Raspberry Pi
+> - Using Python to Read RFID Sticker Values
 >
-> 📌 [Spotify Integration](#spotifyintegration)<br>
-> - [Making the Raspberry Pi a Spotify Connect Device](#spotifyconnect)<br>
-> - [Spotify API Setup](#apisetup)<br>
-> - [Using Python to Control Spotify](#spotifypython)<br>
+> 📌 Spotify Integration
+> - Making the Raspberry Pi a Spotify Connect Device
+> - Spotify API Setup
+> - Using Python to Control Spotify
 >
-> 📌 [Combining the Spotify API and RFID Reader](#spotifyrfid)<br>
-> - [Code to control Spotify API using RFID Values](#apirfid)<br>
-> - [Executing the Script on Startup of the Raspberry Pi](#crontab)<br>
+> 📌 Combining the Spotify API and RFID Reader
+> - Code to control Spotify API using RFID Values
+> - Executing the Script on Startup of the Raspberry Pi
 >
-> 📌 [Finishing Touches](#finishingtouches)<br>
+> 📌 Finishing Touches
 
 
 
