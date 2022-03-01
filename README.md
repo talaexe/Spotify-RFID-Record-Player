@@ -36,8 +36,10 @@ I get a small commission if you use the links below to purchase the items for th
 - Speakers
 
 
-## Blog Table of Contents
-https://talaexe.com/moderndayrecordplayer
+## More Info
+Detailed steps can be found in my blog: https://talaexe.com/moderndayrecordplayer
+
+Blog Table of Contents
 > 📌 Bill of Materials
 >
 > 📌 RFID Scanning
