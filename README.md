@@ -36,7 +36,7 @@ I get a small commission if you use the links below to purchase the items for th
 - Speakers
 
 
-### Blog Table of Contents
+## Blog Table of Contents
 https://talaexe.com/moderndayrecordplayer
 > 📌 Bill of Materials
 >
