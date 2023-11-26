@@ -4,10 +4,7 @@ import RPi.GPIO as GPIO
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 from time import sleep
-
-DEVICE_ID="YOUR_DEVICE_ID"
-CLIENT_ID="YOUR_CLIENT_ID"
-CLIENT_SECRET="YOUR_CLIENT_SECRET"
+from musicAndParameters import *
 
 while True:
     try:
@@ -24,20 +21,18 @@ while True:
             print("Card Value is:",id)
             sp.transfer_playback(device_id=DEVICE_ID, force_play=False)
             
-            # DONT include the quotation marks around the card's ID value, just paste the number
-            if (id=='RFID-CARDVALUE-1'):
-                
+            # DONT edit here. Only edit the musicAndParameters.py file
+            if id in SONGS.keys():
+
                 # playing a song
-                sp.start_playback(device_id=DEVICE_ID, uris=['spotify:track:2vSLxBSZoK0eha4AuhZlXV'])
+                sp.start_playback(device_id=DEVICE_ID, uris=[ SONGS[id] ])
                 sleep(2)
                 
-            elif (id=='RFID-CARDVALUE-2'):
+            elif id in ALBUMS.keys():
                 
                 # playing an album
-                sp.start_playback(device_id=DEVICE_ID, context_uri='spotify:album:0JGOiO34nwfUdDrD612dOp')
+                sp.start_playback(device_id=DEVICE_ID, context_uri= ALBUMS[id])
                 sleep(2)
-                
-            # continue adding as many "elifs" for songs/albums that you want to play
 
     # if there is an error, skip it and try the code again (i.e. timeout issues, no active device error, etc)
     except Exception as e:
