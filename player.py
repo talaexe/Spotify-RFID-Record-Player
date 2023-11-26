@@ -4,24 +4,7 @@ import RPi.GPIO as GPIO
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 from time import sleep
-
-DEVICE_ID="YOUR_DEVICE_ID"
-CLIENT_ID="YOUR_CLIENT_ID"
-CLIENT_SECRET="YOUR_CLIENT_SECRET"
-
-# Edit here to add one song per RFID tag
-SONGS = {
-    # Format:
-    #   RFID-CARDVALUE: 'uris_Value'
-    865269176938: 'spotify:track:2vSLxBSZoK0eha4AuhZlXV',
-}
-
-# Edit here to add an album per RFID tag
-ALBUMS = {
-    # Format:
-    #   RFID-CARDVALUE: 'context_uri_value',
-    865202068078: 'spotify:album:0JGOiO34nwfUdDrD612dOp',
-}
+from musicAndParameters import *
 
 while True:
     try:
@@ -38,7 +21,7 @@ while True:
             print("Card Value is:",id)
             sp.transfer_playback(device_id=DEVICE_ID, force_play=False)
             
-            # DONT edit here
+            # DONT edit here. Only edit the musicAndParameters.py file
             if id in SONGS.keys():
 
                 # playing a song

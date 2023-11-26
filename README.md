@@ -9,6 +9,7 @@ The record player uses Radio-frequency identification (RFID), the same technolog
 In this project, the RFID scanner module is mounted inside the wooden box, and the vinyls all have an RFID sticker that can be tapped on the box to switch the album. Inside the box, the RFID scanner is wired to a Raspberry Pi, which is running a python program that switches the song based on the value it reads from the RFID scanner. Depending on the RFID sticker value, the corresponding album is played through the Spotify API.  
 
 I wrote a very detailed blog post with all the steps you need here:
+NOTE: Instructions have been changed. Copy file `musicAndParameters.py` onto your RasPy first and only edit this file.
 https://talaexe.com/moderndayrecordplayer
 
 You can also watch the YouTube video here if you prefer.
